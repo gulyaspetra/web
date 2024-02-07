@@ -1,0 +1,57 @@
+#div1{
+    width: 160px;
+    height: 305px;
+    margin: 12px;
+    float: left;
+    transition: 1.2s;
+}
+#div2{
+    width: 160px;
+    height: 305px;
+    margin: 12px;
+    transition: 1.2s;
+}
+#div3{
+    width: 160px;
+    height: 305px;
+    margin: 12px;
+    transition: 1.2s;
+}
+#div4{
+    width: 160px;
+    height: 305px;
+    margin: 12px;
+    transition: 1.2s; 
+}
+#div1:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#div2:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#div3:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#div4:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#h2tav{
+    margin-left: 50px;
+    clear: both;
+}
+#h2nya{
+    margin-left: 60px;
+    clear: both;
+}
+#h2osz{
+    margin-left: 70px;
+    clear: both;
+}
+#h2tel{
+    margin-left: 70px;
+    clear: both;
+}
