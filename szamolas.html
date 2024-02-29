@@ -5,23 +5,92 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="button" value="Összeadás" onclick="osszead()">
+    <div>
+        <input type="button" value="+" onclick="katt()">
+        <input type="button" value="-" onclick="katt2()"> 
+        <input type="button" value=":" onclick="katt3()"> 
+        <input type="button" value="x" onclick="katt4()"> 
+    </div>
+    
     <script>
-        function osszead(){
-            let szam1
-            let szam2
-            let eredmeny
-
-            szam1 = Number (prompt("Add meg a számot"))
-            while(Number.isNaN(szam1)){
-            szam1 = Number (prompt("számot írj be"))
+        function katt() {
+            let szam1 , szam2 , eredmeny ;
+    
+            szam1 = Number(prompt("Első szám")) ;
+            while(Number.isNaN(szam1)) {
+                szam1 = Number(prompt("szamot irj be")) ;
             }
-            szam2 = Number (prompt("Add meg a második számot"))
-
-            eredmeny = szam1 +szam2;
-            alert("a két szám összege: " + eredmeny)
+            
+    
+            szam2 = Number (prompt("Masodik  szam")) ;
+            while(Number.isNaN(szam2)) {
+             szam1 = Number(prompt("szamot irj be")) ;
+            }
+    
+            eredmeny = szam1 + szam2;
+    
+            alert("A ketto szam(ok) összege:" + eredmeny)
         }
-
+    </script>
+    
+    <script>
+        function katt2() {
+            let szam1 , szam2 , eredmeny ;
+    
+            szam1 = Number(prompt("Első szám")) ;
+            while(Number.isNaN(szam1)) {
+                szam1 = Number(prompt("szamot irj be")) ;
+            }
+    
+            szam2 = Number (prompt("Masodik  szam")) ;
+            while(Number.isNaN(szam2)) {
+             szam1 = Number(prompt("szamot irj be")) ;
+            }
+    
+            eredmeny = szam1 - szam2;
+    
+            alert("A ketto szam(ok) különbsége:" + eredmeny)
+        }
+    </script>
+    
+    <script>
+        function katt3() {
+            let szam1 , szam2 , eredmeny ;
+    
+            szam1 = Number(prompt("Első szám")) ;
+            while(Number.isNaN(szam1)) {
+                szam1 = Number(prompt("szamot irj be")) ;
+            }
+    
+            szam2 = Number (prompt("Masodik  szam")) ;
+            while(Number.isNaN(szam2)) {
+             szam1 = Number(prompt("szamot irj be")) ;
+            }
+    
+            eredmeny = szam1 / szam2;
+    
+            alert("A ketto szam(ok) hányadosa:" + eredmeny)
+        }
+    </script>
+    
+    <script>
+        function katt4() {
+            let szam1 , szam2 , eredmeny ;
+    
+            szam1 = Number(prompt("Első szám")) ;
+            while(Number.isNaN(szam1)) {
+                szam1 = Number(prompt("szamot irj be")) ;
+            }
+    
+            szam2 = Number (prompt("Masodik  szam")) ;
+            while(Number.isNaN(szam2)) {
+             szam1 = Number(prompt("szamot irj be")) ;
+            }
+    
+            eredmeny = szam1 * szam2;
+    
+            alert("A ketto szam(ok) szorzata:" + eredmeny)
+        }
     </script>
 </body>
 </html>
