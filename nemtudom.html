@@ -6,11 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="color" name="szinn" id="szin" onchange="colorchange()">
+    <h1 style="text-align: center;">Háttér választó</h1>
+    <input style="margin-left: auto; margin-right: auto; display: block; width: 75%; height: 50vh;"  type="color" name="szinn" id="szin" onchange="colorchange()">
+    <br>
+    <input type="button" value="kattints ide" onclick="kiír">
+    <p style="text-align: center; font-weight: bold;"></p>
     <script>
         function colorchange() {
-            document.getElementById("szin").style
+            document.body.style.color =szin.value;
         }
+          function kiír() {
+            
+          }
+          
+
     </script>
 </body>
 </html>
