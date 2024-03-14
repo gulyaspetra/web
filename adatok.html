@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+    background-color: rgb(193, 193, 250);
+    color: rgb(0, 0, 0);
+        }
+    </style>
+   
+
+</head>
+<body>
+    <form action="javascript:void(0)">
+        <fieldset style="width: 30%; background-color: blueviolet;">
+            <legend style="background-color: blueviolet;">Adatok</legend>
+            <input type="text" name="data" id="nev" placeholder="Nev"> 
+            <br>
+            <label for="nev">Add meg a neved</label> <br>
+            <input type="email" name="data" id="email" placeholder="email"> 
+            <br>
+            <label for="email">Add meg az emailed</label> <br>
+            <input type="password" name="data" id="pass" placeholder="jelszó"> 
+            <br>
+            <label for="password">Add meg a jelszavad</label> <br>
+            <input type="reset" value="mégse" onclick="del()">
+            <input type="submit" value="beküldés">
+        </fieldset>
+    </form>
+    <script>
+        function set() {
+            localStorage.setItem =("name",  nev.value);
+            localStorage.setItem =("email",email.value)
+            localStorage.setItem =("password",password.value)
+        }
+        function del() {
+            localStorage.clear;
+        }
+    </script>
+</body>
+</html>
