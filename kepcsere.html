@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kepcsere</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Főoldal</a> |
+        <a href="keplink.html">Képlink feladat</a>|
+        <a href="lista.html">Listák feladat</a>|
+        <a href="urlap.html">űrlap feladat</a>|
+        <a href="4evszak.html">4 évszak</a>|
+        <a href="szamolas.html">Számolás</a>|
+        <a href="kepcsere.html">Képcsere</a> 
+        </nav>
+    <h1 style="text-align: center;">Csere program</h1>
+    <div style="border-radius: 25px; background-color: blueviolet; margin: auto; padding: 50px;">
+        <img style="margin: auto; height: 450px; display: block;" src="kecske.jpg" alt="kecske" id="kecske" onclick="kecske()">
+    <img style="margin: auto; display: none; " src="ganyu.jpg" alt="ganyu" id="ganyu" onclick="ganyu()">
+    </div>
+    <script>
+        function ganyu(){
+            document.getElementById("kecske").style.display = "None"
+            document.getElementById("ganyu").style.display = "Block"
+        }
+        function ganyu() {
+            document.getElementById("ganyu").style.display= "block"
+            document.getElementById("kecske").style.display= "none"
+        }
+    </script>
+</body>
+</html>
