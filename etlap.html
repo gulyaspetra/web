@@ -1,36 +1,17 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kávézó</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        /* Itt lehetne saját CSS stílusokat hozzáadni */
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+      <title>Lekváros Kávézó</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-
 <body>
-    <nav>
-        <a href="index.html">Főoldal</a> |
-        <a href="keplink.html">Képlink feladat</a>|
-        <a href="lista.html">Listák feladat</a>|
-        <a href="urlap.html">űrlap feladat</a>|
-        <a href="4evszak.html">4 évszak</a>|
-        <a href="szamolas.html">Számolás</a>|
-        <a href="kepcsere.html">Képcsere</a> |
-        <a href="etlap.html">Étterem</a>
-        </nav>
-
-    <header class="bg-dark text-light text-center py-5">
-        <h1>Lekváros kávézó</h1>
-        <p>2024.04.04-ben épült Miskolcon</p>
+    <header  class="bg-dark text-center py-3 bs-light-text-emphasis col">
+        <h1 class="text-center mt-5 mb-4 text-white">Lekváros Kávézó</h1>
     </header>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
         <div class="container">
             <a class="navbar-brand" href="#">Főoldal</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -49,97 +30,144 @@
             </div>
         </div>
     </nav>
+    <div class="container" id="main-content">
 
-    <div id="main-content" class="container py-5">
-        <section id="home" class="text-center">
-            <img src="kave.webp" class="img-fluid rounded" alt="Étterem vagy kávézó">
-            <h2>Üdvözlünk Kávézó oldalán!</h2>
-            <p>Meleg ételek,sok féle kávé.</p>
-        </section>
-
-        <section id="menu" class="mt-5">
-            <h2 class="text-center">Étlap</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-warning">
-                        <div class="card-body">
-                            <h5 class="card-title">Csokis keksz</h5>
-                            <p class="card-text">Leírás:ropogós</p>
-                            <p class="card-text">Ár: 2000 ft</p>
-                            
-                        </div>
-                    </div>
+<div id="main-content" class="container py-5">
+  <section id="home" class="text-center">
+   <img src="kave.webp" alt="Lekváros Kávézó" class=" img-fluid rounded" title="A legenda" >
+   <h2 class="mt-5">Üdvözlünk a Lekváros Kávézóba</h2>
+   <p class="fs-4 text">Ez a Kávéző nemrég épült Meseország utca 71 kerületbe</p>
+   <p class="fs-4 text">Finonom meleg ételek
+   </p>
+   
+  </section>
+  
+      </div>
+    <section id="menu">
+        <div class="container py-5">
+        <h1 class="text-center py-3">Ételek a Lekváros Kávézó-ba </h1>
+          <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card">
+                <img src="kifli.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kifli</h5>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tuzlelekModal">Részletek</button> <p><b>8000 Ft</b></p>
                 </div>
-            
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-success">
-                        <div class="card-body">
-                            <h5 class="card-title">Forró csoki</h5>
-                            <p class="card-text">Leírás:meleg</p>
-                            <p class="card-text">Ár: 8000 ft</p>
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-success">
-                        <div class="card-body">
-                            <h5 class="card-title">Kifli</h5>
-                            <p class="card-text">Leírás:ropogós</p>
-                            <p class="card-text">Ár: 100 ft</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-info">
-                        <div class="card-body">
-                            <h5 class="card-title">Lekváros palacsinta</h5>
-                            <p class="card-text">Leírás:barackos lekvár</p>
-                            <p class="card-text">Ár: 1000 ft</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-success">
-                        <div class="card-body">
-                            <h5 class="card-title">hosszú kávé</h5>
-                            <p class="card-text">Leírás:erős</p>
-                            <p class="card-text">Ár: 3200 ft</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- További ételek és italok kártyákban -->
+              </div>
             </div>
-        </section>
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card">
+                <img src="palacsinta.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lekváros palacsinta</h5>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sarkanytuzosModal">Részletek</button> <p><b>12 Ft</b></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card">
+                <img src="forro.csoki.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Forro csoki</h5>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sarkanyvertModal">Részletek 
+                  </button>
+                  <p><b>9000 Ft</b></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card">
+                <img src="csokis_keksz.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Csokis keksz</h5>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gombocModal">Részletek</button> <p><b>10000 Ft</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+  </section>
 
-        <section id="contact" class="mt-5">
-            <h2 class="text-center">Kapcsolat</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Név</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">E-mail cím</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Üzenet</label>
-                    <textarea class="form-control" id="message" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Küldés</button>
-            </form>
-        </section>
+  <!-- Modalok -->
+  <div class="modal fade" id="tuzlelekModal" tabindex="-1" aria-labelledby="tuzlelekModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tuzlelekModalLabel">Kifli</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         Friss, ropogós
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+        </div>
+      </div>
     </div>
+  </div>
 
+  <div class="modal fade" id="sarkanytuzosModal" tabindex="-1" aria-labelledby="sarkanytuzosModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sarkanytuzosModalLabel">Lekváros palacsinta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Szilvalekváros puha tésztá
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="sarkanyvertModal" tabindex="-1" aria-labelledby="sarkanyvertModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sarkanyvertModalLabel">Forro csoki</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Forró es csokis
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="gombocModal" tabindex="-1" aria-labelledby="gombocModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="gombocModalLabel">Csokis keksz</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         Retkes és ropogós
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <section id="contact">
     <footer class="bg-dark text-light text-center py-3">
-        <p>© 2024 kávézó</p>
+      <p>© Lekváros Kávézó</p>
+      <h3> Eléhetőségeink:</h3>
+      <p>Telefonszám:+362398741</p>
+      <p>Lekváros Kávézó@gmail.com</p>
     </footer>
+  </section>
 
-    <!-- Bootstrap JavaScript -->
-    <script src="kave.webp"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
 </html>
