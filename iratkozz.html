@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>hirlevel</title>
+</head>
+<body>
+    <h1>Iratkozz fel!</h1>
+    <form action="javascript:void(0)">
+        <fieldset id="hirlevel">
+            <label for="hirlevel">Hírlevél feliratkozás</label>
+            <br>
+            <input type="email" name="email" id="email">
+            <label for="email">Email cím</label>
+            <br>
+            <input type="text" name="nev" id="nev">
+            <label for="nev">Név</label>
+            <br>
+            <input type="checkbox" name="aszf" id="aszf" checked>
+            <label for="aszf">Ászf</label>
+            <br>
+            <input type="checkbox" name="hir" id="hir">
+            <label for="hir">Hírlevél</label>
+            <br>
+            <input type="submit" value="Beküldés" onclick="tarol()">
+        </fieldset>
+    </form>
+    <script>
+        function tarol(){
+            localStorage.setItem("email" , email.value)
+            localStorage.setItem("name" , nev.value)
+            localStorage.setItem("hirlevel" , hirlevel.value)
+            
+        }
+    </script>
+</body>
+</html>
