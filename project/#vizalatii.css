@@ -1,0 +1,44 @@
+body{
+    background-image: url(
+982e78701a1023f04f2f500039fd4f6f.jpeg
+);
+    background-repeat: no-repeat;
+    background-color: rgb(41, 98, 202);
+}
+p{
+    
+    font-family: Verdana;
+    color: white;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+    color: rgb(167, 179, 201);
+}
+.kép{
+width: 240px;
+}
+a:link,a:hover,a:active,a:visited{
+    color: rgb(167, 179, 201);
+    text-decoration: none;
+}
+li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+div{
+    
+    background-color: rgb(72, 129, 175);
+    margin: auto;
+    width: 999px;
+}
+td{
+    background-color: rgb(41, 74, 116);
+    color: white;
+}
+li{
+    font-size: 16px;
+}
+ol{
+    color: aliceblue;
+}
