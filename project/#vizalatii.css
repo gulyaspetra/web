@@ -42,3 +42,8 @@ li{
 ol{
     color: aliceblue;
 }
+img{
+    width: 250px;
+    display: block;
+    margin: auto;
+}
