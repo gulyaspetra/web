@@ -1,85 +1,22 @@
 <!DOCTYPE html>
-<html lang="hu">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gulyás petra</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    
-    
-
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<nav>
-<a href="index.html">Főoldal</a> |
-<a href="keplink.html">Képlink feladat</a>|
-<a href="lista.html">Listák feladat</a>|
-<a href="urlap.html">űrlap feladat</a>|
-<a href="4evszak.html">4 évszak</a>|
-<a href="szamolas.html">Számolás</a>|
-<a href="kepcsere.html">Képcsere</a> |
-<a href="etlap.html">Étterem</a>
-</nav>
-   
-    <h1>Gulyás Petra</h1>
-    <h2>Gulyás Petra</h2>
-    <h3>Gulyás Petra</h3>
-    <h4>Gulyás Petra</h4>
-    <h5>Gulyás Petra</h5>
-    <h6>Gulyás Petra</h6>
-    
-    <img src="img/kollazs.jpg" alt="ezen a képen van a kollázsom" title="kollázs" width="400">
- 
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in venenatis ex. Aenean sed vestibulum diam. Nulla
-        facilisi. Curabitur in turpis at sapien condimentum gravida non vel velit. Nulla facilisi. Sed molestie ipsum
-        eget ipsum tincidunt aliquam. Aliquam <a href="https://www.lipsum.com/feed/html"target="_blank">accumsan</a> quam et egestas tempor. Vivamus ac quam a orci tristique
-        elementum sed sit amet tellus. Sed euismod placerat sem id egestas. Pellentesque nec finibus diam. Duis porta
-        tempus nibh, in rutrum mauris suscipit et. Nam iaculis hendrerit dui. Morbi commodo, enim non ultrices cursus,
-        enim quam vehicula velit, a euismod dui enim sed sapien. Curabitur ultricies velit sit amet tortor luctus
-        rutrum. Proin tempus dignissim enim, a ultricies urna.</p>
-    <p>Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-        Integer dictum, eros ac accumsan hendrerit, neque dolor euismod arcu, ut ultrices orci lacus ac arcu. Donec
-        lacinia ipsum sed enim auctor dapibus. Pellentesque at eros a lorem elementum sodales. Vestibulum ut fringilla
-        nisl, id auctor tellus. Mauris a libero condimentum, tincidunt justo sed, finibus velit. Nunc tempor feugiat
-        sapien, sit amet tempus augue sollicitudin in.</p>
-    <p>Phasellus vulputate vel metus ut feugiat. Etiam lacinia nibh quam, in aliquet neque venenatis id. Nam vestibulum
-        tincidunt finibus. Integer consequat eros at ligula eleifend, eu efficitur magna congue. Sed ac convallis orci.
-        Donec lacus est, pretium vel placerat vel, molestie quis tellus. Phasellus bibendum felis facilisis, porttitor
-        mi nec, tempus turpis. Morbi accumsan dapibus orci, eu tempor neque aliquet vel. Integer iaculis non ex in
-        commodo. Phasellus ac ex egestas, accumsan magna vitae, pellentesque dui. Vestibulum ante ipsum primis in
-        faucibus orci luctus et ultrices posuere cubilia curae; Nulla aliquet vitae lorem vel aliquam. Aenean imperdiet
-        tellus ipsum, et viverra velit porta quis.</p>
-    <p>Aenean vel tellus tempus, convallis libero et, sodales nisl. Sed iaculis, enim non iaculis tincidunt, sapien
-        magna tempus tortor, vitae auctor purus nulla non nunc. Pellentesque cursus consequat dolor, eget pretium nisl
-        dapibus eget. Fusce facilisis, tellus in sodales fringilla, magna erat malesuada est, in porttitor velit magna
-        eu nisi. Duis arcu lorem, scelerisque at feugiat et, faucibus sed turpis. Phasellus iaculis, eros sit amet
-        dictum auctor, augue est pretium lectus, et scelerisque purus quam non libero. Etiam auctor velit ac sem luctus
-        euismod. Cras et rhoncus tellus.</p>
-    <p>Ut nec nibh sem. Nam non felis aliquet, convallis nulla sit amet, tincidunt libero. Pellentesque semper tincidunt
-        neque sed blandit. Fusce pellentesque arcu felis, a tempus massa mattis sed. Aenean tempor sit amet risus eu
-        mattis. Suspendisse mi lacus, hendrerit at elit ut, suscipit hendrerit arcu. Nam orci velit, vehicula at elit
-        eu, tempor ultrices neque. Nunc eleifend blandit tellus, id auctor sapien. Mauris mattis eros sollicitudin
-        sapien faucibus blandit. Duis iaculis dolor erat, et viverra tellus maximus eget. Nunc maximus diam id sem
-        consectetur, et ullamcorper purus auctor. Proin commodo facilisis dui, id pellentesque mi suscipit sit amet.
-        Fusce bibendum lorem magna, vitae malesuada risus pulvinar quis. Morbi sem mauris, aliquet eu suscipit ut,
-        tempor sed nisi. Quisque consequat ac risus sit amet iaculis.</p>
-<footer>
-    <p id="kozep"> Gulyás Petra <br>
-Kandó Kálmán Informatikai Technikum <br>
-gulyaspp@kkszki
-    </p>
-</footer>
-
+    <div class="container">
+        <h1>Will you be my Valentine?</h1>
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
+        </div>
+        <div class="gif_container">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
